@@ -1,0 +1,30 @@
+{
+   "name": "messier1001/messier.core",
+   "type": "library",
+   "description": "The core of the Messier 1001 framework/library.",
+   "support": {
+      "issues": "https://github.com/Messier-1001/Messier.Core/issues",
+      "source": "https://github.com/Messier-1001/Messier.Core"
+   },
+   "license": "LGPLv3",
+   "authors": [
+      {
+         "name": "Messier 1001",
+         "email": "messier.1001+code@gmail.com"
+      }
+   ],
+   "require": {
+      "php": ">=7.1"
+   },
+   "require-dev": {
+      "phpunit/phpunit": "5.4.6"
+   },
+   "autoload": {
+      "files": [
+         "src/Messier/functions.php"
+      ],
+      "psr-0": {
+         "Messier\\": "src/"
+      }
+   }
+}

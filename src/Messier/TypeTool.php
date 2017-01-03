@@ -81,7 +81,7 @@ abstract class TypeTool
    public static function IsInteger( $value ) : bool
    {
 
-      return (bool) \preg_match( static::$rxInt32, (string) $value );
+      return \is_int( $value ) || (bool) \preg_match( static::$rxInt32, (string) $value );
 
    }
 
@@ -95,7 +95,7 @@ abstract class TypeTool
    public static function IsDecimal( $value, bool $cultureInvariant = false ) : bool
    {
 
-      if ( \preg_match( static::$rxInt64, (string) $value ) )
+      if ( \is_float( $value ) || \is_int( $value ) || \preg_match( static::$rxInt64, (string) $value ) )
       {
          return true;
       }

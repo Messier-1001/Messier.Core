@@ -14,6 +14,6 @@ or inside the `composer.json`:
 ```json
    "require": {
       "php": ">=7.1",
-      "messier1001/messier.core": "^0.1.0"
+      "messier1001/messier.core": "^0.1.2"
    },
 ```

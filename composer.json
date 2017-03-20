@@ -21,9 +21,9 @@
    },
    "autoload": {
       "files": [
-         "src/Messier/functions.php"
+         "src/functions.php"
       ],
-      "psr-0": {
+      "psr-4": {
          "Messier\\": "src/"
       }
    }
